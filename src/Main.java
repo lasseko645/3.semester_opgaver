@@ -24,6 +24,13 @@ public class Main {
             e.printStackTrace();
         }
 
+        try {
+            System.out.println( decrypt(main.encrypt("kasserolle")));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
 
     }
 
