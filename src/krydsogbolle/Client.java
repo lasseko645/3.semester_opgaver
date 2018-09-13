@@ -47,6 +47,17 @@ public class Client extends Thread {
     //should be as sipmle as that, ill work out the heavy logic on the serverside backend.
     //commit:6 end
 
+    //commit:7 start
+    //this method will be used to let the server register a move from any given client
+    public void enemyMadeMove(int tileID){
+        System.out.println("your opponent marked: " + tileID);
+    }
+    //i think that should do it, but i will come back to it laterif i need to
+    //if i come back to it, it will be in a commit inside the method
+    //commit:7 end
+
+
+
 
 
 
