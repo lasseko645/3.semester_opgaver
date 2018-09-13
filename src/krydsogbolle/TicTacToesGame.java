@@ -6,10 +6,12 @@ public class TicTacToesGame {
     //here i make an array that handle userside information about current board
     //right now this array wont work bacause the Playboard class has not been made yet
     //as default i make all the values nothing
-    private PlayBoard[] board {
+    private Client[] board {
         null, null, null,
         null, null, null,
         null, null, null};
     //commit:3 end
+
+
 
 }
