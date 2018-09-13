@@ -51,5 +51,19 @@ public class TicTacToesGame {
     //commit: 10 end
 
 
+    //commit: 11 start
+    //i now need my program to be able to find out if the move a client is trying to do is a legal move
+    public synchronized boolean possibleMove(int tileID, Client client){
+        if (client == playerHost && gameBoard[tileID] == null){
+            gameBoard[tileID] = playerHost;
+            playerHost = playerHost.enamy;
+            playerHost.enemyMadeMove(tileID);
+            return true;
+        }
+        return false;
+    }
+    //this should be enough logically, as far as i can see to make the information transfer sufficient
+    //commit: 11 end
+
 
 }
