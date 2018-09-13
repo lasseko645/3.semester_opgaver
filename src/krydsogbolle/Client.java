@@ -56,6 +56,47 @@ public class Client extends Thread {
     //if i come back to it, it will be in a commit inside the method
     //commit:7 end
 
+    //commit:8
+    //i now take the step to build the method that will control what happens while the client threads are running.
+    //a part of the logic is taken from the internet and not understood intirely
+    //the possibleMove method, winnerFound method and the fillBoard method are methods for later declaration
+    public void run(){
+        try {
+
+            output.println("both players are ready player X makes the first move...");
+
+            if(x_Or_O == 'X'){
+                output.println("you are player X, make your move...");
+            }
+
+            while (true) {
+                String cmd = input.readLine();
+                if (cmd.startsWith("Move")) {
+                    int tileID = Integer.parseInt(cmd.substring(5));
+                    if (possibleMove(tileID, this)) {
+                        output.println("Move Made!");
+                        //this next line, i am slightly confused about the logic inwolved.
+                        output.println(winnerFound() ? "Victory" : fillBoard() ? "Tie" : "");
+                    } else {
+                        output.println("Quitting...");
+                    }
+                } else if (cmd.startsWith("Quitting...")) {
+                    return;
+                }
+            }
+        }   catch (Exception e){
+            System.out.println("player disconnected: " + e);
+        }   finally {
+            try {
+                socket.close();
+            }   catch (Exception e){
+
+            }
+        }
+    }
+    //det skulle være logikken gjordt godt nok til at virke,
+    //de metoder som ikke er lavet indu er planlagt før skrivning af kode og skulle oplyses senere i projektet
+    //commit:8 end
 
 
 
