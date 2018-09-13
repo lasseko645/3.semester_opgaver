@@ -39,6 +39,14 @@ public class Client extends Thread {
     //i am not sure if this will do it but it should surfice acording to my documentation
     //commit:5 end
 
+    //commit:6 start
+    //i will make a method that the server can use to set any given clients opponent
+    public void setOpponent(Client opponent){
+        this.enamy = opponent;
+    }
+    //should be as sipmle as that, ill work out the heavy logic on the serverside backend.
+    //commit:6 end
+
 
 
 
