@@ -37,6 +37,19 @@ public class TicTacToesGame {
     //this should do it, unfortunately as of the time of this commit i have no way to test if it works so ill just have to trust in my planning
     //commit: 9 end
 
+    //commit: 10 start
+    //i will here make the program have the ability to figure out if there are no more empty tiles in on the board
+    public boolean fullBoard(){
+        for (int i = 0; i < gameBoard.length; i++){
+            if (gameBoard[i] == null ){
+                return false;
+            }
+        }
+    return true;
+    }
+    //i think this should be able to be called to check that the board is full or not
+    //commit: 10 end
+
 
 
 }
