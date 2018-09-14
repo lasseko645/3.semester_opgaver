@@ -1,7 +1,6 @@
-package krydsogbolle;
+/*package krydsogbolle.discardedcode;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -52,6 +51,13 @@ public class Client extends Thread {
     //this method will be used to let the server register a move from any given client
     public void enemyMadeMove(int tileID){
         System.out.println("your opponent marked: " + tileID);
+        //commit:12 start
+        //i need this small extra bit of code to make
+        //i need the program to be able to tell if your opponents move will make them win the match or not
+        output.println(winnerFound() ? "you lost" : fullBoard() ? "noone wins" : "");
+        //now the program should ask if there is a winner, if its a tie or if nothing happened, and it will ask this every time any given clients opponents move gets registered for them
+        //commit:12 end
+
     }
     //i think that should do it, but i will come back to it laterif i need to
     //if i come back to it, it will be in a commit inside the method
@@ -108,3 +114,4 @@ public class Client extends Thread {
 
 
 }
+*/
