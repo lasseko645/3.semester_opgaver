@@ -6,6 +6,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 
+
+//this class was consider better suited in the project in a difrent structure... and was trashed, most of the code can be found in the TicTacToeGame class and some in the serside class
 public class Client extends Thread {
 
 
