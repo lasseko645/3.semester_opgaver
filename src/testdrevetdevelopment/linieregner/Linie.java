@@ -22,12 +22,12 @@ public class Linie {
     public double length(){
         double result;
 
-        result = Math.sqrt(Math.pow((punkt_a.getX() - punkt_b.getX()),2)+Math.pow((punkt_a.getY() - punkt_b.getY()),2));
-
-
-
-
-
+        result = Math.sqrt(
+                Math.pow((punkt_a.getX() - punkt_b.getX()),2)
+                +
+                Math.pow((punkt_a.getY() - punkt_b.getY()),2));
         return result;
     }
+
+
 }

@@ -113,8 +113,8 @@ public class Client {
             response = input.readLine();
             if (response.startsWith("Welcome Player:")) {
                 char mark = response.charAt(8);
-                myIcon = new ImageIcon(mark == 'X' ? "x.gif" : "o.gif");
-                theirIcon = new ImageIcon(mark == 'X' ? "o.gif" : "x.gif");
+                myIcon = new ImageIcon(mark == 'X' ? "X" : "O");
+                theirIcon = new ImageIcon(mark == 'X' ? "O" : "X");
                 gameFrame.setTitle("Tic Tac Toe - Player " + mark);
             }
             while (true){
