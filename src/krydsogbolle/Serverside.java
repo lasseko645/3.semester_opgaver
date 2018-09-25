@@ -1,6 +1,6 @@
 package krydsogbolle;
 
-import jdk.incubator.http.WebSocket;
+
 
 import java.net.*;
 import java.io.BufferedReader;
@@ -19,7 +19,7 @@ public class Serverside {
         //commit:1 start
         //i made the server from the serversocket class in the java libary
         //atm it does nothing but that will change in the future("outdated comment")
-        ServerSocket server = new ServerSocket(7777);
+        ServerSocket server = new ServerSocket(7000);
         System.out.println("server is running...");
         //commit:1 end
 

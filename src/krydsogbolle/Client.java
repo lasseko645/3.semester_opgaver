@@ -74,7 +74,7 @@ public class Client {
     //this method will the the constructor that will make instances of our players when they join the socket server
     //i am not sure if this will work in this commit but i will iterate if it takes further development
     private Client(String adresse) throws Exception{
-        Socket c = new Socket(adresse, PORT);
+        socket = new Socket(adresse, 7000);
         input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         output = new PrintWriter(socket.getOutputStream(),true);
 
