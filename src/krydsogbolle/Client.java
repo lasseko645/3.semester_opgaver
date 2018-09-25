@@ -46,8 +46,29 @@ public class Client {
         public void setIcon(Icon icon){
             label.setIcon(icon);
         }
+
     }
     //commit: 15 end
+
+
+    //commit: 18 continue
+    //i figured out i need som more logik and rather that give the responsibility for the task of using the window to another class.
+    //i figured it would be better suited here
+    //so what i will do here is make the jpanelsquare be usable(clints has to get at pop-up to play the game trough)
+    public static void main(String[] args)throws Exception {
+        while (true){
+            String playerAdresse = (args.length == 0) ? "localhost" : args[1];
+            Client client = new Client(playerAdresse);
+            client.gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            client.gameFrame.setSize(240, 210);
+            client.gameFrame.setVisible(true);
+            client.gameFrame.setResizable(false);
+            client.initiateGame();
+        }
+    }
+    //i have heremade the window pop up for the user of the game however it comes to me that it moght be good to make the players able to play multiple times if they wish
+    //i will come back to it in future iterations if i find it nessecary
+
 
     //commit: 16 start
     //this method will the the constructor that will make instances of our players when they join the socket server
@@ -81,6 +102,7 @@ public class Client {
     //that should do it, im not intirely sure that the gridlayout will work.
     //i dont have an ability to test it right now but documentation states that i should have done it right
     //commit: 16 end
+
 
     //commit: 17 start
     //now the method that i think might be the last part of the program
@@ -127,6 +149,10 @@ public class Client {
     }
     //i believe that is all of the posabilities covered, i will iterate in the future if further development is required
     //commin: 17 end
+
+
+
+
 
 
 
