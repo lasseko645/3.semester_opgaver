@@ -26,7 +26,7 @@ public class RegnerTest {
         //method use: potential use of different functions in order to make the test work
         //method use start
 
-        result = addition.addition(1, 7);
+        result = addition.calcSimpleAddition(1, 7);
 
         //method use end
 
@@ -53,8 +53,8 @@ public class RegnerTest {
     void testRegnemaskineFirstEdition(){
         RegneMaskine regner = new RegneMaskine();
 
-        double valAadd = 3;
-        double valBsub = 7;
+        double valAadd = regner.addition.calcSimpleAddition(2,1);
+        double valBsub = regner.subtraction.calcSimpleSub(10,3);
 
         assertEquals(3,valAadd);
         assertEquals(7,valBsub);
