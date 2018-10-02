@@ -49,5 +49,10 @@ public class RegnerTest {
     }
 
 
+    @Test
+    void testRegnemaskineFirstEdition(){
+
+    }
+
 
 }
