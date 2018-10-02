@@ -26,7 +26,7 @@ public class RegnerTest {
         //method use: potential use of different functions in order to make the test work
         //method use start
 
-        result = addition.returnAddition(1, 7);
+        result = addition.addition(1, 7);
 
         //method use end
 
