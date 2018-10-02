@@ -17,8 +17,8 @@ public class RegnerTest {
         //datafield: for all local variable and objects that the test will need to funktion
         //datafield start
 
-        int valA = 1;
-        int valB = 7;
+        RegnerAddition addition = new RegnerAddition();
+        double result;
 
         //datafield end
 
@@ -26,7 +26,7 @@ public class RegnerTest {
         //method use: potential use of different functions in order to make the test work
         //method use start
 
-
+        result = addition.returnAddition(1, 7);
 
         //method use end
 
@@ -34,7 +34,7 @@ public class RegnerTest {
         //assertion: assert equals to make an assumption to make the test respond with a success or a failure
         //assertion start
 
-        assertEquals(8,(valA + valB));
+        assertEquals(8,result);
 
         //assertion end
     }
