@@ -119,7 +119,7 @@ public class TicTacToesGame {
             //commit:12 start
             //i need this small extra bit of code to make
             //i need the program to be able to tell if your opponents move will make them win the match or not
-                output.println(winnerFound() ? "you lost" : fullBoard() ? "noone wins" : "");
+            output.println(winnerFound() ? "you lost" : fullBoard() ? "noone wins" : "");
             //now the program should ask if there is a winner, if its a tie or if nothing happened, and it will ask this every time any given clients opponents move gets registered for them
             //commit:12 end
 
@@ -146,11 +146,11 @@ public class TicTacToesGame {
                     if (cmd.startsWith("Move")) {
                         int tileID = Integer.parseInt(cmd.substring(5));
                         if (possibleMove(tileID, this)) {
-                            output.println("Move_Made");
+                            output.println("Move Made!");
                             //this next line, i am slightly confused about the logic inwolved.
                             output.println(winnerFound() ? "Victory" : fullBoard() ? "Tie" : "");
                         } else {
-                            output.println("Info_Message");
+                            output.println("Quitting...");
                         }
                     } else if (cmd.startsWith("Quitting...")) {
                         return;

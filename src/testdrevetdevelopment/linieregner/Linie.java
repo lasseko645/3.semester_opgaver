@@ -30,4 +30,13 @@ public class Linie {
     }
 
 
+    public static void liniePunktPrint(Punkt punkt_1, Punkt punkt_2){
+        Linie linieTemp = new Linie(punkt_1.getX(), punkt_1.getY(), punkt_2.getX(), punkt_2.getY());
+
+
+        System.out.println("punkt 1: " + punkt_1.getX() + " , " + punkt_1.getY());
+
+        System.out.println("punkt 2: " + punkt_2.getX() + " , " + punkt_2.getY());
+        System.out.println("the length between these two point is equal to: " + linieTemp.length());
+    }
 }

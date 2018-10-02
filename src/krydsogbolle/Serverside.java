@@ -32,12 +32,12 @@ public class Serverside {
         //this is the loop that will make sure that once you start playing with a person it should stay as the same person
         try {
             while (true){
-                TicTacToesGame gameInstance = new TicTacToesGame();
-                TicTacToesGame.Client playerO = gameInstance.new Client(server.accept(), 'O');
-                TicTacToesGame.Client playerX = gameInstance.new Client(server.accept(), 'X');
+                TicTacToesGame game = new TicTacToesGame();
+                TicTacToesGame.Client playerO = game.new Client(server.accept(), 'O');
+                TicTacToesGame.Client playerX = game.new Client(server.accept(), 'X');
                 playerO.setOpponent(playerX);
                 playerX.setOpponent(playerO);
-                gameInstance.playerHost = playerO;
+                game.playerHost = playerO;
                 playerO.start();
                 playerX.start();
             }
@@ -46,6 +46,8 @@ public class Serverside {
         }
         //commit:13 end
         //commit:2 end
+
+
     }
 
 

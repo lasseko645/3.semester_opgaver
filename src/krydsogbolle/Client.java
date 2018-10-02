@@ -82,7 +82,7 @@ public class Client {
         gameFrame.getContentPane().add(mgsLabel, "South");
 
         JPanel board = new JPanel();
-        board.setBackground(Color.black);
+        board.setBackground(Color.blue);
         board.setLayout(new GridLayout(3,3,2,2));
 
         for (int i = 0; i < gameBox.length; i++){
@@ -113,8 +113,8 @@ public class Client {
             response = input.readLine();
             if (response.startsWith("Welcome Player:")) {
                 char mark = response.charAt(8);
-                myIcon = new ImageIcon(mark == 'X' ? "X" : "O");
-                theirIcon = new ImageIcon(mark == 'X' ? "O" : "X");
+                myIcon = new ImageIcon(mark == 'X' ? "x.gif" : "o.gif");
+                theirIcon = new ImageIcon(mark == 'X' ? "o.gif" : "x.gif");
                 gameFrame.setTitle("Tic Tac Toe - Player " + mark);
             }
             while (true){
