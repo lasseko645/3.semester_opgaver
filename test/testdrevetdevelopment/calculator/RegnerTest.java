@@ -38,4 +38,15 @@ public class RegnerTest {
 
         //assertion end
     }
+
+
+    @Test
+    void testSubtraction(){
+
+
+        assertEquals(6,(10 - 4));
+    }
+
+
+
 }
