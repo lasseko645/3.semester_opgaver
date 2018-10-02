@@ -1,4 +1,4 @@
 package testdrevetdevelopment.calculator;
 
-public class RegnerMain {
+public class RegneMaskine {
 }

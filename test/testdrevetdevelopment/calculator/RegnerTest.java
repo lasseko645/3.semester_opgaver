@@ -51,6 +51,14 @@ public class RegnerTest {
 
     @Test
     void testRegnemaskineFirstEdition(){
+        RegneMaskine regner = new RegneMaskine();
+
+        double valAadd = 3;
+        double valBsub = 7;
+
+        assertEquals(3,valAadd);
+        assertEquals(7,valBsub);
+
 
     }
 
