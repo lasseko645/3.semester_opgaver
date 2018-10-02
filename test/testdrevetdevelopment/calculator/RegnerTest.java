@@ -43,8 +43,13 @@ public class RegnerTest {
     @Test
     void testSubtraction(){
 
+        RegnerSubtraction subtraction = new RegnerSubtraction;
 
-        assertEquals(6,(10 - 4));
+
+
+
+
+        assertEquals(6,subtraction.calcSimpleSub(13, 7));
     }
 
 
