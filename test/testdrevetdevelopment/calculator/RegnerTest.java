@@ -13,11 +13,12 @@ public class RegnerTest {
     //this will be done primarily with comments, so if you dont care for that ignore the first test
     //the first test will just be for the adition funktion so should be simple enough
     @Test
-    private void testAdition(){
+    void testAdition(){
         //datafield: for all local variable and objects that the test will need to funktion
         //datafield start
 
-
+        int valA = 1;
+        int valB = 7;
 
         //datafield end
 
@@ -33,7 +34,7 @@ public class RegnerTest {
         //assertion: assert equals to make an assumption to make the test respond with a success or a failure
         //assertion start
 
-
+        assertEquals(8,(valA + valB));
 
         //assertion end
     }
